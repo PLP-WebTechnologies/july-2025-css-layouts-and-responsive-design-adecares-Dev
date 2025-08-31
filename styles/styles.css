@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5x;
+    line-height: 2.5;
+
+
+}
+
+body {
+    display: grid;
+            grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "footer";
+         grid-template-rows: auto 1fr auto;
+        height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: blue;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+           }
+
+nav {
+    grid-area: nav;
+    background-color: #9c0404;
+}
+
+nav ul {
+    display: flex;
+    list-style: none ;
+    justify-content: center;
+    flex-wrap: auto;
+}
+
+nav li {
+    margin: 0.5rem;
+    
+}
+
+nav a {
+    color: lightblue;
+    text-decoration: none;
+    padding: o.5rem 1rem;
+    transition: cubic-bezier(0.3s);
+}
+
+nav a:hover {
+    background: #9c0404;
+    border-radius: 5px;
+
+
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+.content {
+    background-color: lightcoral;
+    padding: 1rem;
+    border: 2px;
+}
+
+.sidebar {
+    background: lightblue;
+    padding: 1rem;
+    border: 2px; ;
+}
+
+.card-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+
+.card {
+    flex: 1 1 150px;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
